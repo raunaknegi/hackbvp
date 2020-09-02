@@ -20,6 +20,11 @@ let countDown = new Date('Sep 2, 2020 08:00:00').getTime(),
       ));
 
     if (distance < 0) {
+      document.getElementById('days').innerText=0
+      document.getElementById('hours').innerText=0
+      document.getElementById('minutes').innerText =0
+      document.getElementById('seconds').innerText=0
+
       clearInterval(x);
     }
   }, second);
